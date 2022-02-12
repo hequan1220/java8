@@ -1,0 +1,23 @@
+
+#tomcat config
+server :
+  port : 8080
+  ##项目名字配置
+  #servlet :
+  #  context-path : /demo
+spring :
+  # 环境 dev|test|prod
+  profiles :
+    active : dev
+    #引入其他配置文件，例如ftpHX 未配置文件application-ftpHX.yml
+    #include: ftpHX,ftpCloud
+  servlet:
+    multipart:
+      #设置总上传的数据大小
+      max-request-size: 100MB
+      #单个文件大小
+      maxFileSize : 30MB
+      #shiro 报错修改的地方
+    max-connections: 200000
+    max-http-post-size: 9000000
+

@@ -63,7 +63,18 @@ public class InnerClassTest {
 }
 
 interface OuterInterface {
+    default void methodDefault(){
 
+    }
+    default void methodDefault2(){
+
+    }
+    static void staticMethod(){
+
+    }
+    static void staticMethod2(){
+
+    }
 }
 
 interface AnonymousInterface {
